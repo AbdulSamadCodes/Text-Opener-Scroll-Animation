@@ -1,0 +1,171 @@
+/*=========================Fonts========================*/
+
+@font-face {
+    font-family: FoundersGrotesk;
+    src: url('/Fonts/FoundersGroteskCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: cardinalitalic;
+    src: url('/Fonts/cardinalfruitweb-italic.ttf');
+}
+
+@font-face {
+    font-family: cardinalregular;
+    src: url('/Fonts/cardinalfruitweb-regular.ttf');
+}
+
+
+/*=========================Custom Properties========================*/
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+button,
+input {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+    scrollbar-width: thin;
+}
+
+
+/*=========================Main styles===========================*/
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.top,
+.bottom {
+    position: absolute;
+    height: 50vh;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    text-align: center;
+    background-color: var(--color-white);
+    overflow: hidden;
+    z-index: 10;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.center {
+    background-color: var(--color-black);
+    height: 100%;
+}
+
+.main-heading {
+    font-size: 15rem;
+    font-family: FoundersGrotesk;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top .main-heading {
+    top: 57%;
+}
+
+.bottom .main-heading {
+    bottom: 58%;
+}
+
+.center {
+    position: relative;
+    color: var(--color-white);
+    z-index: 2;
+}
+
+.span {
+    font-family: FoundersGrotesk;
+    font-size: 1.5rem;
+    margin-block-end: 20px;
+}
+
+.btn {
+    padding: 8px 6px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: FoundersGrotesk;
+    font-weight: 800;
+    border-radius: 10px;
+}
+
+.center-text {
+    font-family: cardinalitalic;
+    font-weight: 700;
+    font-size: 2.8rem;
+    max-width: 300px;
+    text-align: center;
+    margin-block-end: 10px;
+}
+
+.count {
+    font-family: FoundersGrotesk;
+    font-size: 14rem;
+    margin-block-start: 40px;
+}
+
+.center-content {
+    padding-block-start: 40px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: -70%;
+    right: 0;
+    left: 0;
+}
